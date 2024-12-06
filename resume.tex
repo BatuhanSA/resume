@@ -154,7 +154,7 @@
       {Computer Science Teaching Assistant}{September 2024 -- present}
       {University of California, Santa Cruz }{Santa Cruz, CA}
       \resumeItemListStart
-        \resumeItem{Supported upper-division AI courses with an average class size of 150 students.}
+        \resumeItem{Supported upper-division AI courses with an average class size of +150 students.}
         \resumeItem{Conducted office hours and lab sessions to assist students with debugging and completing assignments.}
         \resumeItem{Enhanced and maintained grading scripts to improve efficiency and resolved issues with legacy code from previous quarters.}
         \resumeItem{Provided technical support for the course autograder, leveraging summer development experience.}
@@ -170,15 +170,23 @@
                 \resumeItem{Migrated the application’s data layer from a JSON-based database to MySQL, ensuring data consistency and improving scalability.}
                 \resumeItem{Implemented PHP-based logic to handle MySQL database queries and operations, ensuring efficient data retrieval and seamless integration with the front-end interface, all within a Dockerized environment.}
             \resumeItemListEnd
-
+        
         \resumeProjectHeading
         {\textbf{LZ78 Compression Project} $|$ \emph{C}}{September 2020 -- December 2020}
         \resumeItemListStart
             \resumeItem{Designed and implemented LZ78-based compression and decompression programs using C.}
             \resumeItem{Implemented trie and word table structures using \texttt{uint8\_t} arrays to handle text, binary, and uncompressed image data.}
             \resumeItem{Utilized buffered I/O techniques with 4KB blocks to ensure efficient file handling.}
-            \resumeItem{Delivered modular and maintainable code with detailed documentation and unit testing for each component.}
         \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Multi-Threaded HTTP Server} $|$ \emph{C, Curl/Netcat}}{January 2022 -- March 2023}
+        \resumeItemListStart
+            \resumeItem{Developed a multi-threaded HTTP server in C to handle atomic GET, PUT, and APPEND requests.}
+            \resumeItem{Implemented a thread-safe bounded buffer using POSIX threads to ensure FIFO behavior and synchronization, improving throughput and maintaining response atomicity.}
+            \resumeItem{Validated server functionality and compliance with HTTP 1.1 standards using \texttt{curl} and \texttt{netcat}.}
+        \resumeItemListEnd
+        
    \resumeSubHeadingListEnd
 
 %
@@ -187,7 +195,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, C, MySQL, Golang, Haskel} \\
-     \textbf{Tools}{: Git, Docker, Vim, VS Code, Tmux, Unix CL, Valgrind, GDB, Agile/Scrum} \\
+     \textbf{Tools}{: Git, Docker, Vim, VS Code, Tmux, Unix CL, Valgrind, GDB, Agile/Scrum, Curl, Netcat} \\
      \textbf{Technologies}{: REST API, CI/CD, Open-Source}
     }}
  \end{itemize}
