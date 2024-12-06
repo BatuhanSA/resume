@@ -1,0 +1,197 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Batuhan Salih} \\ \vspace{1pt}
+    \small 310-948-5458 $|$ \href{mailto:basalihcs@gmail.com}{\underline{basalihcs@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/batuhan-salih-a61266295/}{\underline{linkedin.com/in/batuhan-salih-a61266295}} $|$
+    \href{https://github.com/BatuhanSA}{\underline{github.com/BatuhanSA}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{September 2024 -- present}
+      {Masters of Science in Computer Science}{Santa Cruz, CA}
+    \resumeSubheading
+      {University of California, Santa Cruz}{September 2019 -- March 2024}
+      {Bachelor of Science in Computer Science}{Santa Cruz, CA}
+        \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{Relevant Coursework}{: Data Structures \& Algorithms, Principles of Computer Systems Design, Computer Architecture, Artificial Intelligence, Software Engineering, Web Applications} \\
+        }}
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Junior Software Developer}{Jun 2024 - Sep 2024}
+      {University of California, Santa Cruz }{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Collaborated on the development of an open-source autograder project, a tool providing automated grading for educational use, improving efficiency and accessibility for educators}
+        \resumeItem{Built a Docker image for the server side to improve CI/CD of the Python side and to make deployment of the autograder server smoother.}
+        \resumeItem{Optimized Docker image for the autograder by removing unnecessary Go-related files and directories, reducing image size by 20\% and improving CI/CD deployment efficiency.}
+        \resumeItem{Ensured code was maintainable by writing readable code and updating the associated documentation}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Computer Science Teaching Assistant}{September 2024 -- present}
+      {University of California, Santa Cruz }{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Supported upper-division AI courses with an average class size of 150 students.}
+        \resumeItem{Conducted office hours and lab sessions to assist students with debugging and completing assignments.}
+        \resumeItem{Enhanced and maintained grading scripts to improve efficiency and resolved issues with legacy code from previous quarters.}
+        \resumeItem{Provided technical support for the course autograder, leveraging summer development experience.}
+    \resumeItemListEnd
+ \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{UCSC Academic Planner} $|$ \emph{PHP, MySQL, Python, Docker}}{September 2023 -- December 2023}
+            \resumeItemListStart
+                \resumeItem{Improved an academic planner application built with Laravel and PHP, implementing new features to enhance user experience and functionality.}
+                \resumeItem{Migrated the application’s data layer from a JSON-based database to MySQL, ensuring data consistency and improving scalability.}
+                \resumeItem{Implemented PHP-based logic to handle MySQL database queries and operations, ensuring efficient data retrieval and seamless integration with the front-end interface, all within a Dockerized environment.}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{LZ78 Compression Project} $|$ \emph{C}}{September 2020 -- December 2020}
+        \resumeItemListStart
+            \resumeItem{Designed and implemented LZ78-based compression and decompression programs using C.}
+            \resumeItem{Implemented trie and word table structures using \texttt{uint8\_t} arrays to handle text, binary, and uncompressed image data.}
+            \resumeItem{Utilized buffered I/O techniques with 4KB blocks to ensure efficient file handling.}
+            \resumeItem{Delivered modular and maintainable code with detailed documentation and unit testing for each component.}
+        \resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, MySQL, Golang, Haskel} \\
+     \textbf{Tools}{: Git, Docker, Vim, VS Code, Tmux, Unix CL, Valgrind, GDB, Agile/Scrum} \\
+     \textbf{Technologies}{: REST API, CI/CD, Open-Source}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
