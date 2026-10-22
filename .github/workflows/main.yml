@@ -1,0 +1,64 @@
+name: Main
+
+on:
+  - push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install TeX
+        shell: bash
+        run: |
+            sudo apt-get update -y
+            sudo apt-get install -y texlive-latex-extra
+
+      - name: Build Resume
+        shell: bash
+        run: ./scripts/build.sh
+
+  site:
+    needs: build
+    if: ${{ github.event_name == 'push' && github.repository_owner == 'BatuhanSA' && github.ref == 'refs/heads/main' }}
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install TeX
+        shell: bash
+        run: |
+            sudo apt-get update -y
+            sudo apt-get install -y texlive-latex-extra
+
+      - name: Build Resume
+        shell: bash
+        run: ./scripts/build.sh
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: 'build/site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
