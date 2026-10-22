@@ -1,0 +1,19 @@
+# Editor Files
+.DS_Store
+*.swp
+.idea
+
+# Common Temp Dirents
+old/
+temp/
+out*/
+/test-*
+test/
+/test*.*
+
+# Build
+/build/
+*.log
+*.aux
+*.out
+*.pdf
